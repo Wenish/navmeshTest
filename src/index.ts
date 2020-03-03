@@ -7,7 +7,9 @@ fs.readFile('./src/map.obj', 'utf8', function(err, data) {
     console.log(data);
     var parsedJSON = wavefrontObjParser(data)
     console.log(parsedJSON)
-    fs.writeJson('./src/map.json', parsedJSON)
+    fs.writeJson('./src/map.json', parsedJSON, {
+        spaces: 2
+    })
 });
 
 
