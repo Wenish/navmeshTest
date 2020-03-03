@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         "module": "commonjs",
+        "moduleResolution": "node",
         "target": "es6",
         "outDir": "./dist/",
         "lib": [
@@ -12,5 +13,7 @@
         "sourceMap": false,
         "resolveJsonModule": true,
         "esModuleInterop": true  
-    }
+    },
+    "include": [ "./src/**/*.ts" ],
+    "typeAcquisition": { "enable": true }
 }
