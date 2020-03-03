@@ -45,7 +45,9 @@ fs.readFile('./src/map.obj', 'utf8', function(err, data) {
 
     const navMesh = new NavMesh(meshPolygonPoints);
     console.log(navMesh)
+    console.time('pathfinding')
     const path = navMesh.findPath({ x: 3, y: 2 }, { x: 8, y: 8 });
+    console.timeEnd('pathfinding')
     console.log(path)
     fs.writeJson('./src/path.json', path, {
         spaces: 2
