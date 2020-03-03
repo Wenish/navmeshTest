@@ -51,10 +51,3 @@ fs.readFile('./src/map.obj', 'utf8', function(err, data) {
         spaces: 2
     })
 });
-
-
-//import NavMesh from "navmesh"
-/*
-const navMesh = new NavMesh([])
-console.log(navMesh)
-*/
